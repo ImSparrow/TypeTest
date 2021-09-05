@@ -1,0 +1,19 @@
+.stats-container {
+}
+.stats {
+  color: #a7a094;
+  text-align: center;
+}
+.message {
+  display: flex;
+  color: #a7a094;
+  text-align: center;
+  justify-content: center;
+}
+.message p {
+  margin: 0;
+}
+.tab{
+  margin-right:0.5rem;
+  margin-left:0.5rem;
+}

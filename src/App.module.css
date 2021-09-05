@@ -1,0 +1,11 @@
+.wordContainer {
+  display: flex;
+  overflow: hidden;
+  word-wrap: break-word;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #282b2c;
+}

@@ -1,0 +1,10 @@
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right:3rem;
+  margin-left:3rem;
+}
+.word {
+  margin-right: 0.3rem;
+  display: flex;
+}
