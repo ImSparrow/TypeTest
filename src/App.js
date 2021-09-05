@@ -1,6 +1,5 @@
 import Input from "./components/Input/input";
 import classes from "./App.module.css";
-import { useDispatch } from "react-redux";
 import MainDisplay from "./components/Display/mainDisplay";
 import { useState } from "react";
 import Timer from "./components/Timer/Timer";

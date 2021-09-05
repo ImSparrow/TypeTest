@@ -1,2 +1,2 @@
-A type test site
-Hit tab to reset quote
+A type test site create using react Hit tab to reset quote\
+https://typertester.netlify.app/
