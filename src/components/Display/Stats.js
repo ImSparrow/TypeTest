@@ -6,13 +6,11 @@ const Stats = () => {
   const word = useSelector((state) => state.time.words);
   const accuracy = useSelector((state) => state.display.correct);
   let counter = 0;
-  accuracy.map((isTrue) => {
+  accuracy.forEach((isTrue) => {
     if (isTrue === true) {
       counter++;
     }
   });
-  console.log(accuracy);
-  console.log(counter);
   const accuracyStat = ((counter / accuracy.length) * 100).toFixed(2);
   const wpm = Math.floor((60 * word) / time);
   return (

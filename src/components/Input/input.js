@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { displayAction } from "../../store/displaySlice";
 import { timeAction } from "../../store/timeSlice";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import classes from "./input.module.css";
 const Input = (props) => {
   const text = useSelector((state) => state.display.currentWord);
@@ -48,9 +48,7 @@ const Input = (props) => {
         // find the difference in characters and skips to the beginning of the next word
         const increaseBy = Math.abs(userInput.length - text.length);
         if (increaseBy !== 0) {
-          dispatch(
-            displayAction.setCurrent({ current: current + increaseBy })
-          );
+          dispatch(displayAction.setCurrent({ current: current + increaseBy }));
         } else {
           dispatch(
             displayAction.setCurrent({ current: current + increaseBy + 1 })
