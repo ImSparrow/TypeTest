@@ -47,8 +47,12 @@ const Input = (props) => {
         );
         // find the difference in characters and skips to the beginning of the next word
         const increaseBy = Math.abs(userInput.length - text.length);
-        if (increaseBy !== 0) {
+        if (userInput.length === 0) {
           dispatch(displayAction.setCurrent({ current: current + increaseBy }));
+        } else if (increaseBy !== 0) {
+          dispatch(
+            displayAction.setCurrent({ current: current + increaseBy + 1 })
+          );
         } else {
           dispatch(
             displayAction.setCurrent({ current: current + increaseBy + 1 })
